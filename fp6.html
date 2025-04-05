@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Linkcode</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: black;
+      font-family: 'Poppins', sans-serif;
+      padding-top: 80px;
+      color: white;
+    }
+
+    .navbar {
+      background-color: black !important;
+      box-shadow: 0 4px 10px rgba(0, 204, 255, 0.2);
+    }
+
+    .navbar-brand {
+      color: #00ccff !important;
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+
+    .nav-link {
+      color: white !important;
+      margin-right: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #00ccff !important;
+    }
+
+    .dropdown-menu {
+      background-color: #111;
+      border: 1px solid #00ccff;
+    }
+
+    .dropdown-item {
+      color: white;
+    }
+
+    .dropdown-item:hover {
+      background-color: #00ccff;
+      color: black;
+    }
+
+    .form-control {
+      background: linear-gradient(135deg, #00ccff, #7f5af0);
+      border: none;
+      color: white;
+      border-radius: 25px;
+      padding: 10px 20px;
+    }
+
+    .form-control::placeholder {
+      color: white;
+      opacity: 0.8;
+    }
+
+    .form-control:focus {
+      box-shadow: 0 0 10px #00ccff;
+      background: linear-gradient(135deg, #00ccff, #7f5af0);
+    }
+
+    .btn-outline-success {
+      border-radius: 25px;
+      border: 2px solid #00ccff;
+      color: #00ccff;
+      transition: all 0.3s ease;
+    }
+
+    .btn-outline-success:hover {
+      background: #00ccff;
+      color: black;
+      border-color: #00ccff;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      color: #00ccff;
+      font-weight: 600;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .carousel-item img {
+      object-fit: cover;
+      height: 50vh;
+      width: 100%;
+      object-position: center;
+    }
+
+    .position-relative {
+      height: 50vh;
+    }
+    h1{
+        font-style: oblique;
+    }
+    body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+        }
+
+        .header {
+            text-align: center;
+            padding: 30px 0 10px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            background-color: #1a1a1a;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 15px;
+        }
+
+        .card-content h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .card-content p {
+            font-size: 0.95rem;
+            line-height: 1.4;
+        }
+
+        .card-content a {
+            display: inline-block;
+            margin-top: 12px;
+            padding: 10px 18px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            transition: background-color 0.3s;
+        }
+
+        .card-content a:hover {
+            background-color: #0056b3;
+        }
+        p{
+            color:white;
+        }
+        h3{
+            color: white;
+        }
+    
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Linkcode</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
+        aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./fp6.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./sign.html">Join Now</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./abt.html">About Us</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search Courses..." aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" style="max-height: 50vh; overflow: hidden;">
+    <!-- Indicators -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+
+    <!-- Items -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="position-relative">
+          <img src="c:\Users\LENOVO\Downloads\DS2.jfif" class="d-block w-100" alt="Wide Range of Courses">
+          <div class="carousel-caption d-none d-md-block bg-gradient p-4 rounded-4 shadow-lg" style="background: rgba(0,0,0,0.5); backdrop-filter: blur(10px); max-width: 600px;">
+            <h5 class="fw-bold text-white">Wide Range of Courses</h5>
+            <p class="text-light">Explore topics from coding to design, curated for all learners.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="position-relative">
+          <img src="c:\Users\LENOVO\Downloads\DS2.jfif" class="d-block w-100" alt="Expert Instructors">
+          <div class="carousel-caption d-none d-md-block bg-gradient p-4 rounded-4 shadow-lg" style="background: rgba(0,0,0,0.5); backdrop-filter: blur(10px); max-width: 600px;">
+            <h5 class="fw-bold text-white">Expert Instructors</h5>
+            <p class="text-light">Learn from professionals with real-world experience.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="position-relative">
+          <img src="c:\Users\LENOVO\Downloads\DS2.jfif" class="d-block w-100" alt="High-Quality Video Content">
+          <div class="carousel-caption d-none d-md-block bg-gradient p-4 rounded-4 shadow-lg" style="background: rgba(0,0,0,0.5); backdrop-filter: blur(10px); max-width: 600px;">
+            <h5 class="fw-bold text-white">High-Quality Video Content</h5>
+            <p class="text-light">Enjoy sharp and engaging HD lessons designed for clarity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Affiliations Section -->
+  <div style="background-color: black; height: 50px;">
+    <p><h1 style="color: white; text-align: center;">Affiliated University</h1></p>
+  </div>
+
+  <div style="display: flex; justify-content: space-evenly; background-color: black;">
+    <h2><img style="border-radius:50%;border:5px solid black;margin:5px;" width="150" height="150" src="https://th.bing.com/th/id/OIP.GmOW9QB6xR4NRkM1bLDRYgHaHv?w=244&h=255" alt="error"></h2>
+    <h2><img style="border-radius:50%;border:5px solid black;margin:5px;" width="150" height="150" src="https://th.bing.com/th/id/OIP.bCxUuwkFd03madxNrU4yXAHaEK?w=333&h=187" alt="error"></h2>
+    <h2><img style="border-radius:50%;border:5px solid black;margin:5px;" width="150" height="150" src="https://th.bing.com/th/id/OIP.2cmDHtiQ-ST_wvIH9PKwRAHaHa?w=250&h=250" alt="error"></h2>
+    <h2><img style="border-radius:50%;border:5px solid black;margin:5px;" width="150" height="150" src="https://th.bing.com/th/id/OIP.lnXEbXDcJ3n6lBdXkYL6hQHaFj?w=288&h=216" alt="error"></h2>
+    <h2><img style="border-radius:50%;border:5px solid black;margin:5px;" width="150" height="150" src="https://th.bing.com/th/id/OIP.NCBc6U3X2kUnGZOiTv8WHAHaHN?w=253&h=246" alt="error"></h2>
+  </div>
+
+  <div style="background-color: black; display: flex; color: white; justify-content: space-evenly;">
+    <h3>UCLA</h3>
+    <h3>MICHIGAN</h3>
+    <h3>ASU</h3>
+    <h3>YALE</h3>
+    <h3>CORNELL</h3>
+  </div>
+  <hr color="Sky-blue">
+
+  <div class="header">
+    <h1>The Courses We Offer</h1>
+</div>
+
+<div class="card-container">
+    <!-- Full Stack Development Card -->
+    <div class="card">
+        <img src="https://th.bing.com/th/id/OIP.42lzWZay8f4vcsmRy9YbqwHaD6?w=300&h=180&c=7&r=0&o=5&pid=1.7" 
+             alt="Full Stack Development">
+        <div class="card-content">
+            <h3>Full Stack Development</h3>
+            <p>Learn to build both the front-end and back-end of web applications using modern tools and frameworks.</p>
+            <a href="#">Apply Now</a>
+        </div>
+    </div>
+
+    <!-- Add More Cards Like This -->
+    <div class="card">
+        <div class="card-content">
+            <img src="c:\Users\LENOVO\Downloads\DS.jpg" alt="">
+            <h3>Data Science</h3>
+            <p>Dive into data analytics, visualization, and machine learning with hands-on projects and real-world datasets.</p>
+            <a href="#">Apply Now</a>
+        </div>
+    </div>
+
+    <div class="card">
+        <img src="c:\Users\LENOVO\Downloads\DS2.jfif" 
+             alt="UI/UX Design">
+        <div class="card-content">
+            <h3>UI/UX Design</h3>
+            <p>Master the art of creating intuitive and beautiful user experiences with design tools and real apps.</p>
+            <a href="#">Apply Now</a>
+        </div>
+    </div>
+</div>
+
+
+  
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
